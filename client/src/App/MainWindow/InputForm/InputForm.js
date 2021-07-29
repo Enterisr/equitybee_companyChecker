@@ -19,7 +19,7 @@ function InputForm(props) {
       const data = await fetch(utils.resolveServerURI() + `company?${params}`);
       if (data) {
         const companyData = await data.json();
-        alert(companyData);
+        props.appendToCompanyList(companyData);
       }
     } catch (ex) {
       console.error(ex);
@@ -36,4 +36,8 @@ function InputForm(props) {
     </form>
   );
 }
+InputForm.propTypes = {
+  appendToCompanyList: PropTypes.func,
+};
+
 export default InputForm;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import CompanyList from "./CompanyList/CompanyList";
 import InputForm from "./InputForm/InputForm";
@@ -7,10 +7,13 @@ function MainWindow(props) {
   return (
     <>
       <main className="mainWindow-main">
+        <InputForm appendToCompanyList={props.appendToCompanyList} />{" "}
         <CompanyList />
-      <InputForm />{" "}
       </main>
     </>
   );
 }
 export default MainWindow;
+MainWindow.propTypes = {
+  appendToCompanyList: PropTypes.func,
+};

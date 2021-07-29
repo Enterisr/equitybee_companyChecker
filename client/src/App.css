@@ -5,12 +5,17 @@
   box-sizing: border-box;
 }
 :root {
-  --accent-color: red;
+  --accent-color: rgb(0, 87, 99);
   --margin-unit: 1em;
+}
+body,
+html {
+  width: 100vw;
+  height: 100vh;
 }
 .App {
   text-align: center;
-  min-height: 100vh;
+  height: 100%;
 }
 
 .App-logo {

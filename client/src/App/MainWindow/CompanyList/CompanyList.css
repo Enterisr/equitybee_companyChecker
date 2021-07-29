@@ -1,0 +1,30 @@
+.company-ul {
+  width: 50%;
+  margin: auto;
+  box-shadow: 0px 0px 3px 0px;
+  padding: 1em;
+  min-height: 15em;
+  max-height: 30vh;
+  background: #ff000005;
+  border-radius: 7px;
+  overflow: auto;
+}
+.company-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  cursor: pointer;
+  margin-top: var(--margin-unit);
+  box-shadow: 0px 0px 16px -7px var(--accent-color);
+  position: relative;
+  padding: 1rem;
+  transition: ease 0.3 all;
+  border-radius: 1rem;
+}
+.company-li:hover {
+  background-color: white;
+}
+.company-li img {
+  max-width: 2rem;
+}
