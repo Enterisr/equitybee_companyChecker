@@ -13,3 +13,5 @@
 {"message":"29/07/2021, 8:59: error in: /company","level":"error"}
 {"message":"29/07/2021, 8:59: error in: /company","level":"error"}
 {"message":"29/07/2021, 9:0: error in: /company","level":"error"}
+{"message":"29/07/2021, 10:0: error in: /company?domain=google.comTypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'socket' -> object with constructor 'TLSSocket'\n    --- property '_httpMessage' closes the circle","level":"error"}
+{"message":"29/07/2021, 10:1: error in: /company?domain=google.comTypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'ClientRequest'\n    |     property 'socket' -> object with constructor 'TLSSocket'\n    --- property '_httpMessage' closes the circle","level":"error"}

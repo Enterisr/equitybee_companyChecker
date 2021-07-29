@@ -26,14 +26,14 @@ const logger = winston.createLogger({
 
 app.get("/company", async (req, res) => {
   try {
-    const sanitizedInput = req.body?.domain;
+    const sanitizedInput = req.query?.domain;
     if (sanitizedInput) {
       const companyData = await axios.get(CLEARBIT_GATEWAY + sanitizedInput, {
         headers: {
           Authorization: `Bearer ${CLEARBIT_TOKEN}`,
         },
       });
-      res.send(companyData);
+      res.send(companyData.data);
     }
   } catch (ex) {
     logger.error(
